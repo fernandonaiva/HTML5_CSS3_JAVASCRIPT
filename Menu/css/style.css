@@ -1,48 +1,62 @@
 *{
-  margin: 0px;
+  margin:0px;
   padding: 0px;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  box-sizing:border-box;
 }
 
 body{
-  background: rgba(34, 83, 87, 0.171);
+  background: rgba(183, 216, 230, 0.562);
 }
 
 header h1{
-  text-align:center;
+  text-align: center;
+  background: rgb(99, 183, 231);
   padding: 20px;
 }
 
+header p{
+  text-align: center;
+  background: rgb(0, 174, 255);
+   padding: 20px;
+   font-size:20px ;
+}
 nav.menu ul{
-  width: 100%;
-  height: auto;
+  background: rgba(12, 61, 73, 0.288);
   display: flex;
   list-style: none;
-  background: rgba(34, 83, 87, 0.432);
 }
 
 nav.menu li{
-  font-size: 18px;
-  color: rgba(255, 255, 255, 0.701);
+  font-size:22px ;
+ 
 }
-
 nav.menu a{
   display: block;
   padding: 10px 25px;
-  cursor: pointer;
+  text-decoration: none;
+  color:rgba(248, 248, 248, 0.815);
 }
+
 nav.menu a:hover{
-  background: rgba(34, 83, 87, 0.219);
+  background:rgba(12, 61, 73, 0.356);
 }
 
-/*-----formatação do submenu------*/
-
+/*--------formatação do submenu-----------*/
 nav.menu ul ul{
-  display: none;
-  width: auto;
+  display:none;
 }
+
 nav.menu ul li:hover > ul{
-  display:block;
+  display: block;
   position: absolute;
+}
+/*--------sub-submenu-----------*/
+
+nav.menu ul ul ul{
+  left: 101%;
+  top: 45px;
+}
+
+nav.menu ul ul ul{
+ 
 }
